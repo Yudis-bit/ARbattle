@@ -1,0 +1,68 @@
+/* Reset and Global Styles */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  }
+  
+  /* Modern and Futuristic CSS Styles for ARPage */
+  
+  .arpage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(circle, #1e3c72, #2a5298, #000000);
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+    margin-bottom: 40px;
+  }
+
+  .ar-container {
+    display: none; /* Ini akan menyembunyikan elemen dengan class .ar-container */
+}
+  
+  .ar-scene {
+    width: 100%;
+    height: 60vh;
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 30px rgba(0, 255, 204, 0.6), 0 0 50px rgba(0, 255, 204, 0.4);
+    border-radius: 15px;
+    background-color: #000;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .page-title {
+      font-size: 2rem;
+    }
+  
+    .ar-scene {
+      height: 50vh;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .page-title {
+      font-size: 1.5rem;
+    }
+  
+    .ar-scene {
+      height: 40vh;
+    }
+  }
+  
